@@ -1,0 +1,1363 @@
+*{
+   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+html,body{
+    scroll-behavior: smooth;
+     width: 100%;
+     height: 100%;
+}
+#header{
+
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+} 
+video{ top: 0%;
+    background-size: contain;
+ position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+ 
+}
+.navbar{
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 12%;  
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    top: 3%;
+    font-size: 20px;
+   
+    
+}
+.navbar>.logo{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+.navbar img{
+    width: 60px;
+    margin-right: 12px;
+}
+.navbar .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+.navbar .nav-list a{
+    text-decoration: none;
+    margin: 0px 17px;
+    color: gray;
+    transition: 0.4s ease-in-out;
+}
+.navbar .nav-list a:hover{
+    color: white;
+}
+.navbar .btn button{
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 10px  10px;
+    color: white;
+    border: none;
+    background-color: aqua;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+.navbar .btn button:hover{
+    background: white; 
+       color: aqua;
+}
+
+.design{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+  
+}
+.design .de{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    width: 70%;
+    height: 80vh;  
+    color: white;
+    /* background-color: aqua; */
+}
+
+.design h1{
+ text-align: center;
+ font-size: 90px;
+ margin-bottom: 20px;
+}
+.design p{
+    text-align: center;
+ font-size: 25px;
+}
+.design button {
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 40px  0px 0px 0px;
+    color: white;
+    border: none;
+    background-color: aqua;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.design button:hover{
+    background: white; 
+    color: aqua;
+}
+.design .scrollbar{
+   margin: 12px 0px;
+    position:relative;
+    top: 90%;
+  width: 99%;
+  height: 25%;
+ 
+}
+.design .scrollbar h3{
+    margin-left: 30px;
+    color: white;
+    position: absolute;
+    width: 200px;
+}
+.design .scrollbar>img{
+   left:85%;
+    color: white;
+    position: absolute;
+    width: 150px;
+    top: -27%;
+}
+.design .scrollbar .img{
+    cursor: pointer;
+    left:86.9%;
+    rotate: 90deg;
+    position: absolute;
+    width: 90px;
+    top: 0%;
+    transition: 0.2s ease-in-out;
+}
+.design .scrollbar .img:active,.design .scrollbar .img:hover{
+    filter: drop-shadow(5px -1px 4px white);
+    width:90px;
+    top:5%;
+}
+
+
+.design .scroll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    overflow-x: auto;
+    }
+ .scroll::-webkit-scrollbar{
+        overflow-x: scroll;
+    }
+.design .sco{
+    display: flex;
+
+    width: 80%;
+    height: 70px;
+    position: relative;
+   
+    animation: animate 20s linear infinite;
+
+}
+.design .sco img{   
+    width: 90px;
+ margin: 15px 20px;
+ cursor: pointer;
+}
+
+
+@keyframes animate{
+   0%{
+    transform: translateX(100%);
+   }
+   100%{
+    transform: translateX(-100%);
+   }
+  
+}
+/* header section is closed */
+
+#section{
+    width: 100%;
+    height: min(190vh);
+    background-image: url('side collection/icon--recruitment.22af1d7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section i{
+    left: 100px;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+}
+.section1{
+    width: 100%;
+   height: 100vh;  
+}
+
+.section1 h1{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    color: white;
+   font-size: 150px;
+   
+}
+.section1 .text{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: center;   */
+}
+.section1 .text p{
+    position: relative;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    top: 90px;
+    font-size: 20px;
+    width: 38%;
+    height: 50px;
+    margin-left: 5%;
+    
+}
+.section1 .text button{
+    position: relative;
+    top: 80px;
+    width: 170px;
+    height: 60px;
+    border-radius: 8px;
+    margin-left: 10%;
+    border: none;
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.section1 .text button:hover{
+    color: aqua;
+  background-color: white;
+}
+.section2{
+    position: relative;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    top: 5%;
+    width: 80%;
+    height: 30vh;  
+}
+.section2+i{
+    position: relative;
+    margin-top: 100px;
+    
+}
+.section2 .sec1{
+    position: relative;
+    color: white;
+    display: flex;
+    left: 10%;
+    justify-content: space-between;
+   
+}
+.section2 .sec1 img{
+  position: relative;
+   top: 12%;
+}
+.section2 .sec1 p{  
+    font-size: 25px;
+    padding: 12px 60px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 12%; 
+}
+.section3{
+    position: relative;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    top: 10%;
+    width: 80%;
+    height: 30vh;  
+}
+.section3+i{
+    position: relative;
+    margin-top: 150px;
+    
+}
+.section3 .sec2{
+    position: relative;
+    color: white;
+    display: flex;
+    left: 10%;
+    justify-content: space-between;
+   
+}
+.section3 .sec2 img{
+  position: relative;
+   top: 12%;
+}
+.section3 .sec2 p{  
+    font-size: 25px;
+    padding: 12px 60px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 12%; 
+}
+/* section id closed */
+
+#section1{
+    position: relative;
+    width: 100%;
+    height: min(120vh);
+    background-image: url('side collection/icon--cases-bg2.cfd20ef.png');
+    background-color: rgb(14, 17, 23);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.client1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url('side collection/quote.svg');
+    background-repeat: no-repeat;
+    background-size: 27%;
+    background-position: 95% 25%;
+    width: 100%;
+      height: 100vh;
+      display: flex;
+
+}
+/* client-name section */
+
+.client-name{ 
+    width: 100%;
+    margin: 12px 5px 10px 15px;
+
+}
+.client-name h3{
+    top: 15%;
+    position: absolute;
+    left: 50%;
+    font-size: 30px;
+    letter-spacing: 2px;
+     color: white;
+     text-shadow: 5px 2px 5px aqua;
+}
+.client1 h1,#c1,#c2,#c3,#c4,#c5{
+        letter-spacing: 2px;
+        -webkit-text-stroke: 1px white;
+        position: relative;
+        cursor: pointer;
+        top: 12px;
+        height: 16%;
+        text-align: start;
+        width: 40%;
+        margin: 5px 5px;
+        padding: 5px 12px;
+        font-size: 60px;
+        color: transparent;        
+        text-shadow: 7px 1px 10px rgba(147, 170, 239, 0.7);
+        transition: 0.5s ease-in-out;
+        
+    }
+    #section1 .client1 h1 img{
+        left: 85%;
+        height: 50px;
+        position: relative;
+        width: 80px;
+        display: none;
+        top: -50%;
+        
+    }
+    .client1 h1, #c1:hover{
+        color: white;
+    }
+    .client1 h1, #c2:hover{
+        color: white;
+    }
+    .client1 h1, #c3:hover{
+        color: white;
+    }
+    .client1 h1, #c4:hover{
+        color: white;
+    }
+    .client1 h1, #c5:hover{
+        color: white;
+    }
+
+    #section1 .client1 h1:hover img{
+        display: block;
+        filter: drop-shadow(5px -1px 4px white);
+        
+    }
+    
+    #section1 .client-name span{
+        position: absolute;
+        margin-bottom: 10px;
+        width: 40%;
+        height: 0.5px;
+        background-color: white;
+        
+    }
+    
+    .client1 h1:hover{
+    transform:scale(1.08);
+
+}
+
+.client-name #c1 p, .client-name #c2 p, .client-name #c3 p, .client-name #c4 p, .client-name #c5 p{
+
+position: absolute;
+    left: 120%;
+    width: 100%;
+    margin: 5px 5px 5px 50%;
+    display: none;
+}
+.client-name #c1:hover p, .client-name #c2:hover p, .client-name #c3:hover p, .client-name #c4:hover p, .client-name #c5:hover p{
+    left: 75%;
+    position: absolute;
+    color: rgb(239, 228, 208);
+     font-size: 23px;
+     display: block;
+}
+.client-name #c1 p{
+   position: absolute;
+   top: 150%;
+
+}
+
+.client-name #c1 p img{
+    position: relative;
+    left: 15px;
+    top: 45px;
+      width: 8%;
+    margin: 5px 5px 5px 0px;
+    display: block;
+
+}
+.client-name #c1 p i{
+    position: relative;
+    left: 91px;
+    top: -5px;
+    font-size: 20px;
+    width: 225px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c1 p q{
+    position: absolute;
+    left: 85%;
+    top: 80%;
+    font-size: 15px;
+    width: 50px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c2 p{
+   position: absolute;
+   top: 100%;
+}
+
+.client-name #c2 p img{
+    position: relative;
+    left: 15px;
+    top: 90px;
+      width: 8%;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c2 p i{
+    position: relative;
+    left: 91px;
+    top: 40px;
+    font-size: 20px;
+    width: 225px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c2 p q{
+    position: absolute;
+    left: 80%;
+    top: 100%;
+    font-size: 15px;
+    width: 50px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c3 p{
+   position: absolute;
+   top: -40%;
+}
+
+.client-name #c3 p img{
+    position: relative;
+    left: 15px;
+    top: 110px;
+      width: 8%;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c3 p i{
+    position: relative;
+    left: 91px;
+    top: 60px;
+    font-size: 20px;
+    width: 500px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c3 p q{
+    position: absolute;
+    left: 80%;
+    top: 100%;
+    font-size: 15px;
+    width: 50px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c4 p{
+   position: absolute;
+   top: -120%;
+}
+
+.client-name #c4 p img{
+    position: relative;
+    left: 15px;
+    top: 60px;
+      width: 8%;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c4 p i{
+    position: relative;
+    left: 91px;
+    top: 10px;
+    font-size: 15px;
+    width: 500px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c4 p q{
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    font-size: 15px;
+    width: 50px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c5 p{
+   position: absolute;
+   top: -220%;
+}
+.client-name #c5 p img{
+    position: relative;
+    left: 15px;
+    top: 110px;
+      width: 8%;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c5 p i{
+    position: relative;
+    left: 91px;
+    top: 60px;
+    font-size: 20px;
+    width: 225px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+.client-name #c5 p q{
+    position: absolute;
+    left: 80%;
+    top: 100%;
+    font-size: 15px;
+    width: 50px;
+    margin: 5px 5px 5px 0px;
+    display: block;
+}
+
+.client-name button{
+    position: relative;
+    left: 54%;
+    top: 35px;
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: aqua;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.client-name button:hover{
+    color: aqua;
+    background-color: white;
+}
+/* section1 closed */
+
+#section2{
+    width: 100%;
+   height: 100vh;  
+   background-color: rgb(14, 17, 23);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.image-control{
+    overflow: hidden;
+  width: 100%;
+  height: 90vh;
+
+}
+.image-gallery{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    left: -2%;
+    top: -35%;
+    transform: rotate(40deg);
+}
+.image-gallery img{
+    width: 365px;
+    height: 240px;
+    margin: 5px;
+    cursor: pointer;
+}
+.image-gallery .animate0{
+    animation: animate0 2.5s  alternate infinite;
+    
+}
+.image-gallery .animate1{
+    animation: animate1 2.5s  alternate infinite;
+    
+}
+.image-gallery .animate2{
+    
+    animation: animate2 2.5s  alternate infinite;
+    
+}
+.image-gallery .animate3{
+    animation: animate3 2.5s  alternate infinite;
+    
+}
+
+    @keyframes animate0 {
+        
+     0%{
+        transform: translateY(0%);
+    }
+    100%{
+            transform: translateY(-50%);
+    }
+    
+}
+    @keyframes animate1 {
+        
+     0%{
+        transform: translateY(0%);
+    }
+    100%{
+            transform: translateY(110%);
+    }
+    
+}
+    @keyframes animate2 {
+        
+     0%{
+        transform: translateY(0%);
+    }
+    100%{
+            transform: translateY(-140%);
+    }
+    
+}
+    @keyframes animate3 {
+        
+     0%{
+        transform: translateY(0%);
+    }
+    100%{
+            transform: translateY(80%);
+    }
+    
+}
+/* image animation gallery closed */
+#section3{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(9, 12, 20);
+    background-image: url('side collection/sky.png');
+    background-position: 20%;
+}
+.design-item{
+    width: 100%;
+    height: 100vh;
+    filter: drop-shadow(10px -4px 10px rgb(40, 5, 123));
+    background-image: url("side collection/diamonds.svg");
+    background-size: contain;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: 95%;
+
+}
+.design-item h1{
+    position: relative;
+    width: 410px;
+    font-size: 60px;
+    left: 12%;
+    top: 7%;
+    color: white;
+    
+}
+
+.design-item .item-container{
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.design-item .item-container .it{
+    position: relative;
+    margin: 5px;
+    width: 395px;
+    height: 255px;
+    border-radius: 8px;
+    background:rgba(12, 11, 11, 0.5);
+    box-shadow: 3px -3px 13px 0px white, 15px -11px 10px -2px purple, -3px -3px 13px 0px white, -15px 11px 10px -2px purple;
+}
+.design-item .item-container .it img{
+
+    position: relative;
+    float: right;
+    margin: 30px;
+}
+.design-item .item-container .it span{
+    width: 90%;
+    background-color: white;
+    position: absolute;
+    height: 0.5px;
+    left: 20px;
+    bottom: 70px;
+}
+.design-item .item-container .it h2{
+    width: 50%;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    left: 20px;
+    top: 50px;
+}
+.design-item .item-container .it h3{
+    width: 90%;
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    left: 37px;
+    bottom: 30px;
+
+}
+/* section 3 closed   */
+
+#section4{
+    position: relative;
+    width: 100%;
+    height: 170vh;
+    background-color: rgb(9, 12, 20);
+    background-image: url("side collection/circle.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: -70% -40%;
+}
+.video-section{ 
+   width: 100%;
+ height: 150vh;
+ background-image: url("side collection/diamonds.svg");
+  background-repeat: no-repeat;
+  background-position: 110% 120%;
+  /* display: flex; */
+
+}
+.video-section .video-text{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 65%;
+}
+.video-section .video-text h3{
+   position: absolute;
+   color: white; 
+   left: 10%;
+   top: 5%;
+   font-size: 20px;
+}
+.video-section .video-text h1{
+   position: absolute;
+   color: white; 
+   width: 40%;
+   margin-top: 10%;
+   left: 0%;
+   font-size: 50px;
+text-align: center;
+}
+.video-section .video-text button{
+    position: inherit;
+    left: 10%;
+    top: 45%;
+    width: 250px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: aqua;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.video-section .video-text button:hover{
+    color: aqua;
+    background-color: white;
+}
+
+
+
+.video-section .video-text video{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 22%;
+    top: 10%;
+}
+
+/* video text closed */
+.other{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.other .chat{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    text-align: start;
+    height: 40%;
+}
+.other .chat h1{
+    color: white;
+    font-size: 42px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 1px;
+    height: 150px;
+    width: 25%;
+}
+.other .chat p{
+    color: rgb(207, 202, 202);
+    width: 40%;
+  margin-left: 40px;
+    font-size: 22px;
+
+}
+.other .chat span{
+    position: absolute;
+    margin-top: 90px;
+    width: 70%;
+    height: 0.5px;
+    background-color: white;
+}
+
+/* other section is closed */
+
+#section5{
+    position: relative;
+   width: 100%;
+   height: 100vh;
+  background-color: rgb(12, 16, 26);
+
+}
+
+ .card-animation{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+ }
+ .card-name{
+    width: 100%;
+    height: 100vh;
+    background-image: url("side collection/diamonds.svg");
+    background-position: 105% 150%;
+    background-repeat: no-repeat;
+    background-size: 33%;
+
+ }
+ .card-name h3 { 
+    position: relative;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    font-size: 3em;
+    letter-spacing: 2px;
+    width: 40%;
+    color: white;
+    text-shadow: 5px 2px 3px rgb(240, 240, 240);
+}
+
+.card-animation h1, #a1, #a2, #a3, #a4{
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px white;
+    position: relative;
+    cursor: pointer;
+    top: 12px;
+    height: 16%;
+    left: 2%;
+    text-align: start;
+    width: 40%;
+    margin: 5px 5px;
+    padding: 5px 12px;
+    font-size: 60px;
+    color: transparent;
+    text-shadow: 7px 1px 10px rgba(147, 170, 239, 0.7);
+    transition: 0.5s ease-in-out;  
+}
+
+ .card-name h1:hover {
+    transform: scale(1.05);
+ } 
+.card-animation h1, #a1:hover{
+    color: white;
+    
+}
+.card-animation h1, #a2:hover{
+    color: white;
+}
+.card-animation h1, #a3:hover{
+    color: white;
+}
+.card-animation h1, #a4:hover{
+    color: white;
+}
+#section5 .card-name span{
+    position: absolute;
+    margin-bottom: 10px;
+    left: 25px;
+    width: 40%;
+    height: 0.5px;
+    background-color: white
+}
+
+#section5 .card-name h1>img {
+    left: 80%;
+    height: 50px;
+    position: absolute;
+    width: 20%;
+    display: none;
+    top: 30%;
+    filter: drop-shadow(5px -1px 4px white);
+}
+#section5 .card-name h1:hover>img{
+    display: block;    
+}
+.card-animation .card-name h1 .img-class1, .img-class2,.img-class3, .img-class4{
+    position: absolute;
+    top: -70px;
+    left: 110%;
+    width: 47.5vw;
+    height: 77vh; 
+}
+.card-animation .card-name h1 .img-class1 img, .img-class2 img, .img-class3 img, .img-class4 img{
+    position: relative;
+    left: 0%;
+     width: 340px;
+    height: 230px;
+    margin: 12px;
+    border-radius: 5px;
+    border: 2px solid rgb(84, 41, 159);
+    box-shadow: 3px -3px 13px 0px white, 15px -11px 10px -2px purple, -3px -3px 13px 0px white, -15px 11px 10px -2px purple;
+    display: none;  
+}
+.card-animation .card-name h1 .img-class2{
+    position: absolute;
+    top: -170px;
+}
+.card-animation .card-name h1 .img-class3{
+    position: absolute;
+    top: -270px;
+}
+.card-animation .card-name h1 .img-class4{
+    position: absolute;
+    top: -390px;
+}
+
+#section5  .card-animation .card-name #a1:hover .img-class1 img, #a2:hover .img-class2 img, #a3:hover .img-class3 img, #a4:hover .img-class4 img {
+    display: block;  
+
+}
+.card-animation .card-name .img-class1:not(:hover #a1){
+      display: none;
+}
+.card-animation .card-name .img-class2:not(:hover #a2){
+      display: none;
+}
+.card-animation .card-name .img-class3:not(:hover #a3){
+      display: none;
+}
+.card-animation .card-name .img-class4:not(:hover #a4){
+      display: none;
+}
+.card-animation .card-name #a1:hover .img-class1{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    
+}
+.card-animation .card-name #a2:hover .img-class2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card-animation .card-name #a3:hover .img-class3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card-animation .card-name #a4:hover .img-class4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* section5 end */
+#section6{
+    width: 100%;
+    height:130vh;
+    /* display: flex; */
+    /* align-items: center; */
+    background-image: url("side collection/circle.png");
+    background-position: -20% -15%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: rgb(13, 13, 21);
+}
+.text1{
+    position: relative;
+       width: 100%;
+       top: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.text1 h1{
+        position: relative;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 15px 170px 50px 5px;
+    flex-direction: column;
+    color: white;
+    font-size: 150px;
+}
+.text1 span{
+    position: absolute;
+    margin-bottom: 10px;
+    top: 40%;
+    left:5%;
+    width: 80%;
+    height: 0.2px;
+    background-color: white;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    
+}
+.part p{ 
+    position: relative;  
+    left: 3%;   
+     width: 60%;
+    height: 20vh;
+    text-align: center;
+    font-size: 26px;
+    word-spacing: 2px;
+}
+.part button{  
+    position: relative;
+    left: 8%;
+    top: 45%;
+    width: 250px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: aqua;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.part button:hover{
+        background-color: white;
+        color: aqua;
+}
+
+/* blur logo section */
+
+#section6 .blursection{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 50vh;
+    display: flex;
+    padding: 0px 50px;
+}
+#section6 .bsection1, .bsection2, .bsection3, .bsection4{
+     width: 25%;
+     height: 40vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   
+}
+#section6 .bsection1 img{
+    width: 150px;
+    margin: 30px;
+    cursor: pointer;
+    
+    transition: 0.5s ease-in-out;
+}
+#section6 .bsection1 img:hover{
+   
+    filter: drop-shadow(2px -2px 3px aqua);
+}
+#section6 .bsection1 p{
+   font-size: 20px;
+   text-align: center;
+}
+#section6 .bsection2 h3{
+   font-size: 25px;
+   padding: 5px;
+   cursor: pointer;
+   transition: 0.5s ease-in-out;
+}
+#section6 .bsection2 i{
+    display: flex;
+   font-size: 20px;
+   flex-direction: row;
+   padding: 10px 10px;
+   cursor: pointer;
+   transition: 0.5s ease-in-out;
+}
+#section6 .bsection2 i>i:hover{
+      font-size: 30px;
+    color: rgb(167, 239, 239);
+}
+#section6 .bsection2 h3:hover{
+
+  color: rgb(62, 247, 247);
+}
+#section6 .bsection3 h3{
+   font-size: 25px;
+   padding: 5px;
+   cursor: pointer;
+   transition: 0.5s ease-in-out;
+}
+#section6 .bsection3 h3:hover{
+  color: rgb(82, 249, 249);
+}
+#section6 .bsection4 h1{
+    position: relative;
+    font-size: 30px;
+    height: 15vh;
+    width: 100%;
+    left: 90px;
+}
+
+
+#section6 .bsection4 input{
+    position: relative;
+    top: 15%;
+    font-size: 16px;
+    padding:  0px 50px 0px 12px;
+    width: 320px;
+    height: 50px;
+    background-color: transparent;
+    margin: 15px;
+    color: aliceblue;
+
+}
+#section6 .bsection4>img{
+    position: relative;
+    top: -10px;
+    left: 130px;
+    width: 30px;
+    cursor: pointer;
+
+}
+#section6 .text1>p{
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 90px;
+    color: gray;
+}
+/* website completed here */
+/* responsiveness starting */
+    @media only screen and (min-width:430px) and (max-width:1050px) {
+    *{  
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    
+    }
+    html,body{
+         width: 100%;
+         height: 100%;
+    }
+    #header{
+        width: 100%;
+        height: 100vh;
+    } 
+    .navbar .btn button{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 128px;
+        height: 50px;
+        font-size: 13px;
+    }
+    .navbar .btn{
+        position: relative;
+        top: 40px;
+        
+    }
+    
+.design{
+    top: 65px;
+    left:-40px;
+  
+}
+.design .de{  
+    width: 70%;
+    height: 70vh;  
+}
+
+.design h1{
+ font-size: 60px;
+}
+.design p{
+    text-align: center;
+ font-size: 16px;
+}
+.design button {
+    width: 134px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 15px 0px 0px 0px;
+}
+.design .scrollbar{
+    margin: 0px 0px;
+     top: 80%;
+ }
+ .design .scrollbar h3{
+     margin-left: 50px;
+ }
+ .design .scrollbar>img{
+    left: 85%;
+    position: absolute;
+    width: 117px;
+    top: -10%;
+ }
+ .design .scrollbar .img{
+    left: 87%;
+    rotate: 90deg;
+    position: absolute;
+    width: 67px;
+    top: 25px;
+ }
+
+ .design .scroll{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 80%;
+     height: 100px;
+     overflow-x: auto;
+     }
+  .scroll::-webkit-scrollbar{
+         overflow-x: scroll;
+     }
+ .design .sco{
+     display: flex;
+     margin-top: 15px;
+     width: 80%;
+     height: 60px;
+ }
+ /* header responsiveness completed */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
